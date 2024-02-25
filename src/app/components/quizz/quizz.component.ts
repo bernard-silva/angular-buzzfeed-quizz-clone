@@ -20,7 +20,11 @@ export class QuizzComponent implements OnInit {
   questionIndex:number =0
   questionMaxIndex:number=0
 
+  started:boolean = false
   finished:boolean = false
+  restarted:boolean = false
+
+  finalAnswer:string = ''
 
   constructor() { }
 
@@ -34,29 +38,32 @@ export class QuizzComponent implements OnInit {
 
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
-
-      console.log(this.questionIndex)
-      console.log(this.questionMaxIndex)
     }
 
+  }
+
+  start(){
+    this.started = true
+    this.finalAnswer = ''
   }
 
   playerChoose(value:string){
     this.answers.push(value)
     this.nextStep()
-
   }
 
   async nextStep(){
     this.questionIndex+=1
 
     if(this.questionMaxIndex > this.questionIndex){
-        this.questionSelected = this.questions[this.questionIndex]
+        this.questionSelected = this.questions[this.questionIndex]    
     }else{
-      const finalAnswer:string = await this.checkResult(this.answers)
+      this.finalAnswer = await this.checkResult(this.answers)
       this.finished = true
-      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results ]
+      this.restarted = false
+      this.answerSelected = quizz_questions.results[this.finalAnswer as keyof typeof quizz_questions.results ]
     }
+
   }
 
   async checkResult(anwsers:string[]){
@@ -75,4 +82,19 @@ export class QuizzComponent implements OnInit {
     return result
   }
 
+  restart() {
+    this.restarted = true
+    this.finished = false
+    this.started = true
+
+    this.answers = []
+    this.finalAnswer = ''
+    this.answerSelected = ''
+
+    this.questionIndex = 0
+    this.questionSelected = this.questions[this.questionIndex]    
+  }
+
 }
+
+

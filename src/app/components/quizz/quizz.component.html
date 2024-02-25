@@ -5,24 +5,50 @@
     <h3>{{title}}</h3>
   </div>
 
-  <div *ngIf=!finished class="quizz_questions">
+  <div *ngIf="!started && !finished && !restarted" class="quizz_start">
+
+    <img src="assets/imgs/captain-america-civil-war.jpg" alt="">
+    <button 
+      (click)="start()"
+      class="btn-start"
+    > 
+      Iniciar
+    </button>
+
+  </div>
+
+  <div *ngIf="(!finished && started) || (!finished && restarted)" class="quizz_questions">
       <h3>{{questionSelected.question}}</h3>
   </div>
 
-  <div *ngIf=!finished class="quizz_options">
+  <div *ngIf="(!finished && started) || (!finished && restarted)" class="quizz_options">
 
     <button
       *ngFor="let option of questionSelected.options; let i = index"
       (click)="playerChoose(option.alias)"
       class="btn-option"
-    >
+    > 
       {{option.name}}
     </button>
 
   </div>
 
-  <div *ngIf=finished class="quizz_results">
-    <h1>O Seu resultado é:</h1>
-    <p>{{answerSelected}}</p>
+  <div *ngIf="finished && started && !restarted" class="quizz_results">
+    <div class="quizz_results_card">
+      <p>Seu resultado é:</p>
+      <!-- <h1>Time Capitão América!</h1> -->
+      <!-- <h1>Time Homem de Ferro!</h1> -->
+      <h1>{{answerSelected}}</h1>
+      <!-- <img src="assets/imgs/A.png" alt=""> -->
+      <!-- <img src="assets/imgs/B.png" alt=""> -->
+      <img src="assets/imgs/{{finalAnswer}}.png" alt="">
+    </div>   
+
+    <button 
+      (click)="restart()"
+      class="btn-restart"
+    > 
+      Refazer
+    </button>
   </div>
 </div>
