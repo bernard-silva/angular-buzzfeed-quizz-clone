@@ -3,10 +3,10 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist/out-tsc", 
+    "resolveJsonModule": true, /* Permite utilizar o JSON Mockado */
+    "allowSyntheticDefaultImports": true, /* Permite utilizar o JSON Mockado */
+    "forceConsistentCasingInFileNames": true, 
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
