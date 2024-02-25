@@ -1,55 +1,59 @@
 {
-  "title":"Você seria um heroi ou vilão ?",
-  "questions":[
+  "title": "Você é do time Homem de Ferro ou Capitão América?",
+  "questions": [
     {
-      "id":1,
-      "question": "Qual super poder você escolheria ?",
-      "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+      "id": 1,
+      "question": "Você se considera mais:",
+      "options": [
+        {"id": 1, "name": "Engraçado(a)", "alias": "B"},
+        {"id": 2, "name": "Valente(a)", "alias": "A"},
+        {"id": 3, "name": "Irônico(a)", "alias": "B"},
+        {"id": 4, "name": "Tímido(a)", "alias": "A"}
       ]
     },
     {
-      "id":2,
-      "question": "Quem você salvaria primeiro ?",
-      "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+      "id": 2,
+      "question": "Você prefere ser:",
+      "options": [
+        {"id": 1, "name": "Astuto(a)", "alias": "A"},
+        {"id": 2, "name": "Inteligente", "alias": "B"},
+        {"id": 3, "name": "Leal", "alias": "A"},
+        {"id": 4, "name": "Nobre", "alias": "B"}
       ]
     },
     {
-      "id":3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
-      "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+      "id": 3,
+      "question": "Seu super poder seria:",
+      "options": [
+        {"id": 1, "name": "Força sobre-humana", "alias": "A"},
+        {"id": 2, "name": "Voar", "alias": "B"},
+        {"id": 3, "name": "Telepatia", "alias": "B"},
+        {"id": 4, "name": "Poder de uma joia do infinito", "alias": "A"}
       ]
     },
     {
-      "id":4,
-      "question": "Qual o seu maior foco ?",
-      "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+      "id": 4,
+      "question": "Pra relaxar e se divertir você prefere:",
+      "options": [
+        {"id": 1, "name": "Uma bebida alcoólica", "alias": "B"},
+        {"id": 2, "name": "Passeio na natureza", "alias": "A"},
+        {"id": 3, "name": "Um bom livro", "alias": "A"},
+        {"id": 4, "name": "Video-game", "alias": "B"}
       ]
     },
     {
-      "id":5,
-      "question": "Qual o seu apelido de super ser ?",
-      "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+      "id": 5,
+      "question": "Num conflito, você é:",
+      "options": [
+        {"id": 1, "name": "Analítico(a)", "alias": "B"},
+        {"id": 2, "name": "Destemido(a)", "alias": "A"},
+        {"id": 3, "name": "Focado(a)", "alias": "B"},
+        {"id": 4, "name": "Impulsivo(a)", "alias": "A"}
       ]
     }
   ],
-  "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+  "results": {
+    "A": "Time Capitão América!",
+    "B": "Time Homem de Ferro!"
   }
 }
