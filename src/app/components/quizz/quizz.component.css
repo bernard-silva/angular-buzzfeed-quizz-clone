@@ -29,6 +29,24 @@
   width: 50%;
 }
 
+.btn-start > i{
+  font-size: 20px;
+}
+
+.btn-start > i > span{
+  margin-left: 6px;
+  font-family: 'Segoe UI';
+}
+
+.btn-start:hover{
+  background-color: #5cbf2a;
+}
+
+.btn-start:active{
+  position: relative;
+  top:1px;
+}
+
 .quizz_questions{
   display: flex;
   justify-content: center;
@@ -66,7 +84,7 @@
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
+  font-family: 'Arial';
   font-size: 17px;
   padding: 16px 31px;
   text-decoration: none;
@@ -87,7 +105,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
 }
 
@@ -109,11 +127,27 @@
 }
 
 .quizz_results > img {
-  /* width: 60%; */
   width: 100%;
 }
 
-@media screen and (max-width: 730px) {
+.btn-restart > i{
+  font-size: 20px;
+}
+
+.btn-restart > i > span{
+  margin-left: 6px;
+}
+
+.btn-restart:hover{
+  background-color: #5cbf2a;
+}
+
+.btn-restart:active{
+  position: relative;
+  top:1px;
+}
+
+@media screen and (max-width: 1025px) {
   .quizz__container{
     width: 90%;
     margin: auto;
@@ -140,14 +174,9 @@
   .quizz_results_card > img {
     width: 100%;
   }
-
-  /* .quizz_results_card {
-    margin-bottom: 10px;
-  } */
-
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .quizz__container{
     width: 90%;
     margin: auto;
@@ -174,5 +203,5 @@
   .quizz_results_card > img {
     width: 100%;
   }
-
 }
+
