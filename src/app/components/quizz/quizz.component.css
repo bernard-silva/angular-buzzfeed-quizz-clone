@@ -268,5 +268,9 @@
   .quizz_results {
     width: 90%;
   }
+
+  .quizz_results_card {
+    height: 300px;
+  }
 }
 
