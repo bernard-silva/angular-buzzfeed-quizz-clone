@@ -100,7 +100,7 @@ Acesse a URL `http://localhost:4200/`
 
 - Lifecycle Hook: ngOnInit.
 - Structural Directives: *ngIf and *ngFor.
-- Binding Event on Angular: click.
+- Event Binding on Angular: click.
 - Component Injection.
 - tsconfig.json settings for using mock JSON.
 - Responsive CSS.
